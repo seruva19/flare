@@ -38,11 +38,25 @@ You need to have [Git (2.43)](https://git-scm.com/), [Python (3.10)](https://www
 ```
 git clone https://github.com/seruva19/flare
 cd flare
+```
 
+Install core:
+```
+poetry install
+poetry lock
+```
+
+Install plugins:
+```
 poetry run get-default-plugins
 poetry run merge
-poetry install
 
+poetry install
+```
+
+Install client:
+```
+npm install
 npm run build
 ```
 

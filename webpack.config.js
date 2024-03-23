@@ -14,7 +14,7 @@ module.exports = {
   },
   entry: './flare_client/index.js',
   mode: 'development',
-  watch: true,
+  watch: false,
   devServer: {
     port: 3000
   },
