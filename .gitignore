@@ -1,0 +1,12 @@
+.local
+.vscode
+**/__pycache__
+/node_modules
+/coverage
+/plugins
+/build
+/weights
+npm-debug.log*
+package-lock.json
+poetry.lock
+*.bak

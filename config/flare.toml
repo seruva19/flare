@@ -1,0 +1,9 @@
+["offload_models"]
+title = "Offload models after use"
+type = "boolean"
+value = false
+
+["image_path"]
+title = "Path for saving images"
+type = "string"
+value = "build/images"

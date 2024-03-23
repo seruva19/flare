@@ -1,0 +1,56 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "flare"
+version = "0.1.0"
+description = ""
+authors = ["seruva19 <seruva19@yandex.ru>"]
+readme = "README.md"
+[[tool.poetry.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu118"
+priority = "explicit"
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11.*"
+toml = "0.10.2"
+fastapi = "0.108.0"
+uvicorn = "0.25.0"
+omegaconf = "2.3.0"
+
+[[tool.poetry.dependencies.torch]]
+version = "2.2.0+cu118"
+source = "pytorch"
+markers = "sys_platform == 'windows'"
+
+[[tool.poetry.dependencies.torch]]
+version = "2.2.0+cu118"
+source = "pytorch"
+markers = "sys_platform == 'linux'"
+
+[[tool.poetry.dependencies.torch]]
+version = "2.2.0"
+source = "PyPI"
+markers = "sys_platform == 'darwin'"
+
+[tool.poetry.scripts]
+flare = "flare:start"
+get-default-plugins = "scripts.plugins:download"
+update-default-plugins = "scripts.plugins:update"
+merge = "scripts.config:merge"
+reset = "scripts.config:reset"
+test = "scripts.test:run"
+train = "scripts.train:start"
+
+[tool.poetry.dependencies.torchvision]
+version = "0.17.0+cu118"
+source = "pytorch"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.2.0"

@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "NodeNext",
+        "moduleResolution": "nodenext",
+        "jsx": "react",
+        "noImplicitThis": true,
+        "noImplicitReturns": true,
+        "checkJs": true,
+        "target": "esnext"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

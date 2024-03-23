@@ -1,0 +1,84 @@
+.inputContent,
+.outputContent,
+.outputLoader,
+.outputImage {
+  padding: 0;
+  margin-top: 10px;
+  position: relative;
+
+}
+
+.inputContent {
+  display: flex;
+  margin: 20px 0;
+  max-width: 75%;
+}
+
+.outputContent {
+  text-align: right;
+  display: ruby-text;
+  margin: 20px 0;
+}
+
+.inputContent span.messageText,
+.outputContent span.messageText {
+  padding: 0 10px;
+  display: flow;
+  width: auto;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px -1px silver;
+}
+
+.inputContent span.messageText {
+  background: whitesmoke;
+}
+
+.outputContent span.messageText {
+  background: lightyellow;
+}
+
+.outputLoader {
+  width: 100%;
+  transform: translateX(50%);
+}
+
+.outputImage {
+  border-radius: 10px;
+  margin: 10px 0;
+  text-align: right;
+  margin-left: 50%;
+  background: whitesmoke;
+}
+
+.messageInfo {
+  position: absolute;
+  background: dodgerblue;
+  width: 14px;
+  border-radius: 5px;
+  height: 14px;
+  font-size: 13px;
+  color: white;
+  line-height: 13px;
+  font-weight: bold;
+  text-align: center;
+  cursor: default;
+}
+
+.inputContent .messageInfo {
+  left: -20px;
+}
+
+.outputImage .messageInfo,
+.outputContent .messageInfo {
+  right: -20px;
+}
+
+.checkButton {
+  display: flex;
+  width: 100%;
+  border: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-8));
+  border-radius: var(--mantine-radius-sm);
+  padding: var(--mantine-spacing-lg);
+  background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-8));
+}
