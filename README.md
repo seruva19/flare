@@ -88,7 +88,7 @@ And open browser at http://localhost:8000/
 👉 Probably, but Flare's primary focus is on text-guided drawing with the utilization of open-source language models instead of ChatGPT and without using dedicated instruction-trained image editing model. Additionally, one of long-term objectives is to empower users to expand its functionality through plugins written in natural language.
 
 ❓ Isn't it the same concept as [DiffusionGPT](https://github.com/DiffusionGPT/DiffusionGPT)?  
-👉 Likely, but I initiated Flare's development before discovering this project. Honestly, the idea of [multistage processing](https://www.reddit.com/r/StableDiffusion/comments/18em2yf/comment/kcpfsbe) itself is [basic](https://www.reddit.com/r/StableDiffusion/comments/1bl3gnk/comment/kw2y51q), and numerous comparable applications are anticipated to emerge soon, particularly with [SD3 release](https://twitter.com/StabilityAI/status/1770931861851947321?t=rWVHofu37x2P7GXGvxV7Dg) and projects like [ELLA](https://github.com/TencentQQGYLab/ELLA) or [EMILIE](https://arxiv.org/abs/2309.00613) gaining traction. 
+👉 Likely, but I initiated Flare's development before discovering this project. Honestly, the idea of [multistage processing](https://www.reddit.com/r/StableDiffusion/comments/18em2yf/comment/kcpfsbe) itself is [basic](https://www.reddit.com/r/StableDiffusion/comments/1bl3gnk/comment/kw2y51q), and numerous comparable applications are anticipated to emerge soon, particularly with [SD3 release](https://twitter.com/StabilityAI/status/1770931861851947321?t=rWVHofu37x2P7GXGvxV7Dg) and projects like [ELLA](https://github.com/TencentQQGYLab/ELLA) and [EMILIE](https://arxiv.org/abs/2309.00613) gaining traction. 
  
 ## Credits
 
@@ -106,4 +106,7 @@ And open browser at http://localhost:8000/
 
 ## Colab
 
-COMING SOON
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1xVqQoEk0dfJ4uQ4q_txRBMQMOx0phNUn)
+<br>
+
+As for now, it doesn't work in free colab 😓
