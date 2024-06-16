@@ -16,6 +16,15 @@ class FlareTools:
         with open(settings_file, "w") as toml_file:
             toml.dump(settings, toml_file)
 
+    def load_default_ops(self, default_ops_file):
+        with open(default_ops_file, "r") as toml_file:
+            default_ops = toml.load(toml_file)
+        return default_ops
+
+    def save_default_ops(self, default_ops_file, settings):
+        with open(default_ops_file, "w") as toml_file:
+            toml.dump(settings, toml_file)
+
     def save_image(self, image, name=None, output_dir="build/images", nd_arr=False):
         filename = f"{str(uuid.uuid4())}.png" if name is None else name
 

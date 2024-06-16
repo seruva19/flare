@@ -5,6 +5,7 @@ from enum import Enum
 from flare_server.tools import FlareTools
 
 settings_file = "config/flare.toml"
+default_ops_file = "config/default_ops.toml"
 
 
 class FlareEnvironment:
@@ -12,13 +13,21 @@ class FlareEnvironment:
 
     modules = {}
     settings = {}
+    default_ops = {}
 
     def load(self):
         self.settings = self.tools.load_settings(settings_file)
         print(f"flare: settings read from {settings_file}")
 
+        self.default_ops = self.tools.load_default_ops(default_ops_file)
+        print(f"flare: default operations list read from {default_ops_file}")
+
     def to_json(self):
-        return {"modules": self.modules, "settings": self.settings}
+        return {
+            "modules": self.modules,
+            "settings": self.settings,
+            "initOps": self.default_ops,
+        }
 
 
 class FlareRequest(BaseModel):
