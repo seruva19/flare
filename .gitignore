@@ -9,4 +9,5 @@
 npm-debug.log*
 package-lock.json
 poetry.lock
+hftoken
 *.bak
