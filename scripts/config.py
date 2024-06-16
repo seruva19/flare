@@ -1,6 +1,7 @@
 import os
 import shutil
 import toml
+from packaging import version
 
 
 def find_pyproject_toml_files(directory):
@@ -35,7 +36,12 @@ def merge():
             .get("dependencies", {})
             .items()
         ):
-            base_data["tool"]["poetry"]["dependencies"][key] = value
+            if key in base_data["tool"]["poetry"]["dependencies"]:
+                base_version = base_data["tool"]["poetry"]["dependencies"][key]
+                if version.parse(value) > version.parse(base_version):
+                    base_data["tool"]["poetry"]["dependencies"][key] = value
+            else:
+                base_data["tool"]["poetry"]["dependencies"][key] = value
 
     with open(base_file, "w") as f:
         toml.dump(base_data, f)
