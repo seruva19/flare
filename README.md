@@ -72,13 +72,10 @@ And open browser at http://localhost:8000/
 ❓ What are system requirements?   
 👉 I'm not sure, it has only been tested on an RTX 3090. Although there is an `Offload models after use` option in `Settings` tab, enabling which may help to decrease VRAM consumption.
 
-❓ Does it only support SDXL base model?  
-👉 Yes, for now. Once (if?) SD3 is released, I will migrate to it as soon as I can. 
-
 ❓ Can prompt comprehension be improved?  
 👉 Currently, Flare utilizes in-context learning for the vanilla Phi-2 model. While this model is quite capable, its capacity for providing concise instruction interpretation is limited. However, I am confident that additional fine-tuning with a custom instruction dataset will allow Flare to achieve a level of comprehension comparable to DALL-E 3. This is already part of my roadmap.
 
-❓ Why not use 7B models like Mistral etc.?  
+❓ Why not use 7B/8B models like Mistral/Llama etc.?  
 👉 I am considering this, but it might increase system requirements even more, especially considering the fact that I am planning to use Stable Diffusion 3 as the primary image generator. And I think small models like Phi and Gemma must not be underestimated.
 
 ❓ Why not use vision models like LLaVA?  
@@ -90,6 +87,9 @@ And open browser at http://localhost:8000/
 ❓ Isn't it the same concept as [DiffusionGPT](https://github.com/DiffusionGPT/DiffusionGPT)?  
 👉 Likely, but I initiated Flare's development before discovering this project. Honestly, the idea of [multistage processing](https://www.reddit.com/r/StableDiffusion/comments/18em2yf/comment/kcpfsbe) itself is [basic](https://www.reddit.com/r/StableDiffusion/comments/1bl3gnk/comment/kw2y51q), and numerous comparable applications are anticipated to emerge soon, particularly with [SD3 release](https://twitter.com/StabilityAI/status/1770931861851947321?t=rWVHofu37x2P7GXGvxV7Dg) and projects like [ELLA](https://github.com/TencentQQGYLab/ELLA) and [EMILIE](https://arxiv.org/abs/2309.00613) gaining traction. 
  
+❓ Now, when [Omost](https://github.com/lllyasviel/Omost) exists, does it make sense to continue developing Flare?  
+👉 Yes and no. Currently Omost too is far from the concept I have in mind when I started Flare, but who knows? Another option worth reviewing is to integrate Omost as backend into Flare. I haven't decided yet.
+
 ## Credits
 
 🔥 [Transformers](https://github.com/huggingface/transformers)  
@@ -99,6 +99,7 @@ And open browser at http://localhost:8000/
 🔥 [Grounding DINO](https://github.com/IDEA-Research/GroundingDINO)  
 🔥 [LaMa](https://github.com/advimman/lama)  
 ⚡ [Stable Diffusion XL](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0)  
+⚡ [Stable Diffusion 3 Medium](https://huggingface.co/stabilityai/stable-diffusion-3-medium-diffusers)  
 ⚡ [Phi-2](https://huggingface.co/microsoft/phi-2)  
 💧 [FastAPI](https://github.com/tiangolo/fastapi)  
 💧 [React](https://github.com/facebook/react)  

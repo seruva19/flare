@@ -101,14 +101,14 @@ export const sendRequest = async input => {
   if (response.ok) {
     const data = await response.json();
     if (data.error) {
-      error = `Sorry, error occured 😔 (${data.error}) 🥺 Please retry!`;
+      error = `Sorry, error occured 😔 (${data.error})`;
     } else {
       outputPrompt = data.outPrompt;
       outputImage = data.image;
     }
 
   } else {
-    error = 'Sorry, unknown error 😔 Please retry!';
+    error = 'Sorry, unknown error occured 😔';
   }
 
   return { outputPrompt, outputImage, error };
