@@ -9,12 +9,12 @@ const htmlPlugin = new HtmlWebPackPlugin({
 module.exports = {
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'build'),
+    path: __dirname + '/build',
     publicPath: '/client/'
   },
   entry: './flare_client/index.js',
   mode: 'development',
-  watch: false,
+  watch: true,
   devServer: {
     port: 3000
   },

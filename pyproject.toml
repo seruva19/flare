@@ -21,6 +21,7 @@ priority = "primary"
 python = ">=3.10,<3.11.*"
 toml = "0.10.2"
 fastapi = "0.108.0"
+openai = "1.14.2"
 uvicorn = "0.25.0"
 omegaconf = "2.3.0"
 

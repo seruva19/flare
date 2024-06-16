@@ -89,7 +89,7 @@ const BoardChat = ({ messages }) => {
 };
 
 const BoardPrompt = ({ onSendPrompt }) => {
-    const [message, setMessage] = useState({ id: uuidv4(), type: 'input', content: 'Girl on the summer beach with a cat, plane in the sky', image: '', data: {} });
+    const [message, setMessage] = useState({ id: uuidv4(), type: 'input', content: 'Girl on the summer beach with a cat, plane in the sky.', image: '', data: {} });
 
     const handleKeyDown = (event) => {
         if (event.key === 'Enter') {
@@ -126,7 +126,7 @@ export function BoardUI() {
 
     const [history, setHistory] = useState([]);
     const [messages, setMessages] = useState([{
-        id: uuidv4(), type: 'output', content: 'Hey, nothing drawn so far 🙂 Make a request!', image: '', data: {}
+        id: uuidv4(), type: 'output', content: 'Hello! What would you like to draw? 🙂', image: '', data: {}
     }]);
 
     const sendPrompt = async message => {

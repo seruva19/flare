@@ -10,14 +10,17 @@
 
 .inputContent {
   display: flex;
+  text-align: right;
   margin: 20px 0;
   max-width: 75%;
+  float: right;
 }
 
 .outputContent {
-  text-align: right;
+  text-align: left;
   display: ruby-text;
   margin: 20px 0;
+  clear: both;
 }
 
 .inputContent span.messageText,
@@ -27,20 +30,23 @@
   width: auto;
   color: black;
   border-radius: 10px;
-  box-shadow: 0px 0px 3px -1px silver;
+
 }
 
 .inputContent span.messageText {
   background: whitesmoke;
+  box-shadow: 0px 0px 3px -1px whitesmoke;
 }
 
 .outputContent span.messageText {
-  background: lightyellow;
+  background: aliceblue;
+  box-shadow: 0px 0px 3px -1px aliceblue;
 }
 
 .outputLoader {
   width: 100%;
   transform: translateX(50%);
+  clear: both;
 }
 
 .outputImage {
@@ -66,12 +72,12 @@
 }
 
 .inputContent .messageInfo {
-  left: -20px;
+  right: -20px;
 }
 
 .outputImage .messageInfo,
 .outputContent .messageInfo {
-  right: -20px;
+  left: -20px;
 }
 
 .checkButton {
