@@ -76,7 +76,7 @@ And open browser at http://localhost:8000/
 👉 Currently, Flare utilizes in-context learning for the vanilla Phi-2 model. While this model is quite capable, its capacity for providing concise instruction interpretation is limited. However, I am confident that additional fine-tuning with a custom instruction dataset will allow Flare to achieve a level of comprehension comparable to DALL-E 3. This is already part of my roadmap.
 
 ❓ Why not use 7B/8B models like Mistral/Llama etc.?  
-👉 I am considering this, but it might increase system requirements even more, especially considering the fact that I am planning to use Stable Diffusion 3 as the primary image generator. And I think small models like Phi and Gemma must not be underestimated.
+👉 I am considering this, but it might increase system requirements even more, especially considering the fact that I am planning to use Stable Diffusion 3 as the primary image generator (upd. 18.06.2024: maybe I will stick to PixArt Sigma instead). And I think small models like Phi and Gemma must not be underestimated.
 
 ❓ Why not use vision models like LLaVA?  
 👉 While it's entirely feasible, I found it unnecessary for the prototype. I might explore this option later on. Because of Flare's fully modular design, experimenting with different pipelines would be effortless.
@@ -98,6 +98,7 @@ And open browser at http://localhost:8000/
 🔥 [Segment Anything](https://github.com/facebookresearch/segment-anything)  
 🔥 [Grounding DINO](https://github.com/IDEA-Research/GroundingDINO)  
 🔥 [LaMa](https://github.com/advimman/lama)  
+⚡ [PixArt-Σ](https://github.com/PixArt-alpha/PixArt-sigma)  
 ⚡ [Stable Diffusion XL](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0)  
 ⚡ [Stable Diffusion 3 Medium](https://huggingface.co/stabilityai/stable-diffusion-3-medium-diffusers)  
 ⚡ [Phi-2](https://huggingface.co/microsoft/phi-2)  
