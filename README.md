@@ -69,6 +69,9 @@ And open browser at http://localhost:8000/
 
 ## FAQ
 
+❓ Is the project dead?  
+👉 No, it's not dead. Unfortunately, I just don't have enough time to develop all the cool ideas I have in mind simultaneously.
+
 ❓ What are system requirements?   
 👉 I'm not sure, it has only been tested on an RTX 3090. Although there is an `Offload models after use` option in `Settings` tab, enabling which may help to decrease VRAM consumption.
 
@@ -76,7 +79,7 @@ And open browser at http://localhost:8000/
 👉 Currently, Flare utilizes in-context learning for the vanilla Phi-2 model. While this model is quite capable, its capacity for providing concise instruction interpretation is limited. However, I am confident that additional fine-tuning with a custom instruction dataset will allow Flare to achieve a level of comprehension comparable to DALL-E 3. This is already part of my roadmap.
 
 ❓ Why not use 7B/8B models like Mistral/Llama etc.?  
-👉 I am considering this, but it might increase system requirements even more, especially considering the fact that I am planning to use Stable Diffusion 3 as the primary image generator (upd. 18.06.2024: maybe I will stick to PixArt Sigma instead). And I think small models like Phi and Gemma must not be underestimated.
+👉 I am considering this, but it might increase system requirements even more, especially considering the fact that I am planning to use Stable Diffusion 3 as the primary image generator (upd. 08.08.2024: maybe I will stick to FLUX.1 instead). And I think small models like Phi and Gemma must not be underestimated.
 
 ❓ Why not use vision models like LLaVA?  
 👉 While it's entirely feasible, I found it unnecessary for the prototype. I might explore this option later on. Because of Flare's fully modular design, experimenting with different pipelines would be effortless.
@@ -89,6 +92,9 @@ And open browser at http://localhost:8000/
  
 ❓ Now, when [Omost](https://github.com/lllyasviel/Omost) exists, does it make sense to continue developing Flare?  
 👉 Yes and no. Currently Omost too is far from the concept I have in mind when I started Flare, but who knows? Another option worth reviewing is to integrate Omost as backend into Flare. I haven't decided yet.
+
+❓ OK, and now, with the release of Omnigen, does it even make sense to resume development of Flare at all?  
+👉 It does! Omnigen will be a great gem of a plugin in my collection 😎
 
 ## Credits
 

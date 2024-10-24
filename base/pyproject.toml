@@ -54,4 +54,4 @@ version = "0.17.0+cu118"
 source = "pytorch"
 
 [tool.poetry.group.dev.dependencies]
-black = "^24.2.0"
+black = "24.2.0"
