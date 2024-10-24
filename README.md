@@ -93,7 +93,7 @@ And open browser at http://localhost:8000/
 ❓ Now, when [Omost](https://github.com/lllyasviel/Omost) exists, does it make sense to continue developing Flare?  
 👉 Yes and no. Currently Omost too is far from the concept I have in mind when I started Flare, but who knows? Another option worth reviewing is to integrate Omost as backend into Flare. I haven't decided yet.
 
-❓ OK, and now, with the release of Omnigen, does it even make sense to resume development of Flare at all?  
+❓ OK, and now, with the release of [Omnigen](https://github.com/VectorSpaceLab/OmniGen), does it even make sense to resume development of Flare at all?  
 👉 It does! Omnigen will be a great gem of a plugin in my collection 😎
 
 ## Credits
