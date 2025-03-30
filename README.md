@@ -7,6 +7,8 @@ EARLY PROTOTYPE, WORK IN PROGRESS :sleeping:
 11/12/2024: I'm not quite sure about the concept of this; it feels somewhat outdated, especially after seeing [SwiftEdit](https://swift-edit.github.io/).  
 Perhaps the identity of this development should be tweaked. For now, it's currently in a hiatus state.
 
+30/03/2025: I decided to revive this application based on the inevitable advent of local autoregressive multimodal image generation models. Now, I "just" need to learn more about autoregressive models and how they work.
+
 ## Concept
 
 The initial idea was to replicate DALL-E 3's chat-like iterative drawing pipeline.  
