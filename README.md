@@ -9,6 +9,10 @@ Perhaps the identity of this development should be tweaked. For now, it's curren
 
 30/03/2025: I decided to revive this application based on the inevitable advent of local autoregressive multimodal image generation models. Now, I "just" need to learn more about autoregressive models and how they work.
 
+30/05/2025: FLUX.1 Kontext 👀
+
+28/08/2025: It's over. Nano Banana nailed it. RIP 🍌
+
 ## Concept
 
 The initial idea was to replicate DALL-E 3's chat-like iterative drawing pipeline.  
